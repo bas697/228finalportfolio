@@ -146,12 +146,22 @@
         border: 3px black solid;
         border-radius: 6px;
       }
+      
       .hero-mouse {
         position: relative;
-        bottom: -420px;
+        bottom: -520px;
+        filter: none;
         right: -400px;
         width: 500px;
         height: auto;
+        z-index: 3;
+      }
+      
+      .hero-mouse-container {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
         z-index: 4;
       }
 
@@ -770,7 +780,7 @@
       <section class="panel-home" id="home">
         <h1 class="hero-title">BRENDAN</h1>
         <img src="toolsimage.png" alt="Tools" class="hero-tools">
-        <img src="mouse1.svg" alt="mouse" class="hero-mouse">
+        <img src="mouseNEW.svg" alt="mouse" class="hero-mouse">
         <div class="container"></div>
 
         <div class="navbar">
