@@ -30,7 +30,7 @@
         width: 1414px;
         height: 1220px;
         padding: 5px 0px;
-        margin-left: 49px;
+        margin-left: 48.5px;
         margin-top: -32px;
         background-image: url('videodescription.png');
         background-position: center;
@@ -86,7 +86,7 @@
         font-size: 86px;
         margin-right: 650px;
         text-shadow: 2.5px 2.5px 0 #A7300C, -2.5px 2.5px 0 #A7300C,
-          2.5px -2.5px 0 #A7300C, -2.5px -2.5px 0 #A7300C;
+        2.5px -2.5px 0 #A7300C, -2.5px -2.5px 0 #A7300C;
         font-family: 'Anton SC', sans-serif;
       }
 
@@ -106,32 +106,26 @@
         border: 3px solid black;
       }
 
-      .media-info {
+      .media-info-table {
         margin-top: 25px;
+        width: 95%; 
         color: #FDFFD9;
         font-family: "Fredoka One", sans-serif;
         font-size: 26px;
-        text-align: left;
+        text-align: center;
         margin-left: 30px;
         line-height: 2;
+        overflow: hidden;
         text-shadow: 1.6px 1.6px 0 #A7300C, -1.6px 1.6px 0 #A7300C,
         1.6px -1.6px 0 #A7300C, -1.6px -1.6px 0 #A7300C;
       }
-
-      .media-info .label {
-        margin-top: 10px;
-        line-height: 1.2;
+      .media-info-table th {
+        font-size: 30px;
+        text-shadow: 2px 2px 0 #A7300C, -2px 2px 0 #A7300C,
+        2px -2px 0 #A7300C, -2px -2px 0 #A7300C;
       }
-
-      .media-info .item {
-        font-size: 35px;
-        font-family: "Comic Neue", sans-serif;
-        color: #FDFFD9;
-        font-weight: 700;
-        margin: -35px 0 10px;
-        text-shadow: 1.7px 1.7px 0 #A7300C, -1.7px 1.7px 0 #A7300C,
-          1.7px -1.7px 0 #A7300C, -1.7px -1.7px 0 #A7300C;
-
+      .media-info-table td {
+          font-size: 28px;
       }
     </style>
   </head>
@@ -150,15 +144,27 @@
         <h1>UNDEAD, AGAIN</h1>
         <div class="divider"></div>
 
-        <div class="media-info">
-          <p class="label">MEDIA USED:</p>
-          <p class="item">Jujutsu Kaisen S1+S2</p>
-          <p class="label">MUSIC USED:</p>
-          <p class="item">Headshot (IShowSpeed) &amp Unlike Me (Kate Havernik)</p>
-        </div>
+        <table class="media-info-table" border="1">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Media Used:</td>
+            <td>Jujutsu Kaisen S1+S2</td>
+          </tr>
+          <tr>
+            <td>Music Used:</td>
+            <td>Headshot (IShowSpeed) &amp Unlike Me (Kate Havernik)</td>
+          </tr>
+        </tbody>
+      </table>
 
-      </div>
     </div>
+      </div>
 
   </body>
 </html>
