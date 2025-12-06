@@ -13,7 +13,7 @@
         font-family: 'Fredoka One', sans-serif;
         color: #FDFFD9;
         text-shadow: 1px 1px 0 #A7300C, -1px 1px 0 #A7300C,
-          1px -1px 0 #A7300C, -1px -1px 0 #A7300C;
+        1px -1px 0 #A7300C, -1px -1px 0 #A7300C;
         font-size: 24px;
         scroll-behavior: smooth;
       }
@@ -55,7 +55,7 @@
         font-family: "Anton SC", sans-serif;
         font-size: 26px;
         text-shadow: 1px 1px 0 #A7300C, -1px 1px 0 #A7300C,
-          1px -1px 0 #A7300C, -1px -1px 0 #A7300C;
+        1px -1px 0 #A7300C, -1px -1px 0 #A7300C;
         color: #FDFFD9;
         text-decoration: none;
         letter-spacing: 1px;
@@ -64,6 +64,12 @@
       .nav-right {
         display: flex;
         gap: 40px;
+      }
+      
+       .quick-link a {
+        color: #FDFFD9;
+        text-decoration: none;
+        margin: 0 10px;
       }
 
       .nav-right a {
@@ -79,15 +85,11 @@
         position: relative;
       }
 
-      .quick-link a {
-        color: #FDFFD9;
-        text-decoration: none;
-        margin: 0 10px;
-      }
 
       .nav-right a:hover {
         opacity: 0.8;
       }
+     
 
       .nav-contact {
         display: flex;
@@ -138,31 +140,24 @@
 
       .hero-tools {
         position: relative;
-        bottom: -820px;
-        right: -860px;
+        bottom: -735px;
+        right: -900px;
         width: 500px;
         height: auto;
         z-index: 4;
         border: 3px black solid;
         border-radius: 6px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       }
       
       .hero-mouse {
         position: relative;
-        bottom: -520px;
+        bottom: -610px;
         filter: none;
-        right: -400px;
-        width: 500px;
+        right: -410px;
+        width: 12%;
         height: auto;
         z-index: 3;
-      }
-      
-      .hero-mouse-container {
-        position: absolute;
-        top: 50%;
-        left: 70%;
-        transform: translate(-50%, -50%);
-        z-index: 4;
       }
 
       .hero-title::before {
@@ -178,7 +173,8 @@
         background-color: #FFBB00;
         z-index: -1;
         text-shadow: 6px 6px 0 #A7300C, -6px 6px 0 #A7300C,
-          6px -6px 0 #A7300C, -6px -6px 0 #A7300C;
+        6px -6px 0 #A7300C, -6px -6px 0 #A7300C;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       }
 
       .hero-title::after {
@@ -193,7 +189,7 @@
         border-radius: 50%;
         border: 3px #A9320F solid;
         text-shadow: 6px 6px 0 #A7300C, -6px 6px 0 #A7300C,
-          6px -6px 0 #A7300C, -6px -6px 0 #A7300C;
+        6px -6px 0 #A7300C, -6px -6px 0 #A7300C;
         z-index: -3;
       }
 
@@ -247,7 +243,7 @@
         font-family: 'Anton SC', sans-serif;
         font-weight: 600;
         text-shadow: 2px 2px 0 #A9320F, -2px 2px 0 #A9320F,
-          2px -2px 0 #A9320F, -2px -2px 0 #A9320F, 0px 2px 0 #A9320F, 2px 0px 0 #A9320F, -2px 0px 0 #A9320F, 0px -2px 0 #A9320F;
+        2px -2px 0 #A9320F, -2px -2px 0 #A9320F, 0px 2px 0 #A9320F, 2px 0px 0 #A9320F, -2px 0px 0 #A9320F, 0px -2px 0 #A9320F;
       }
 
       .videos-label {
@@ -260,7 +256,7 @@
         color: #FBFCD4;
         z-index: 5;
         text-shadow: 2px 2px 0 #A7310B, -2px 2px 0 #A7310B,
-          2px -2px 0 #A7310B, -2px -2px 0 #A7310B, 0px 2px 0 #A7310B, 2px 0px 0 #A7310B, -2px 0px 0 #A7310B, 0px -2px 0 #A7310B;
+        2px -2px 0 #A7310B, -2px -2px 0 #A7310B, 0px 2px 0 #A7310B, 2px 0px 0 #A7310B, -2px 0px 0 #A7310B, 0px -2px 0 #A7310B;
       }
 
       .play-button {
@@ -348,6 +344,7 @@
         max-height: 550px;
         width: auto;
         display: block;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       }
 
       .caption-box {
@@ -420,6 +417,7 @@
         border-radius: 4px;
         object-position: top;
         margin-top: -1px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       }
 
       .webapp-caption {
@@ -489,6 +487,7 @@
         object-fit: cover;
         object-position: top;
         margin-top: -11px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       }
 
 
@@ -498,7 +497,7 @@
         font-family: 'Anton SC', sans-serif;
         color: #FBFCD4;
         text-shadow: 1.5px 1.5px 0 #A7310B, -1.5px 1.5px 0 #A7310B,
-          1.5px -1.5px 0 #A7310B, -1.5px -1.5px 0 #A7310B, 0px 1.5px 0 #A7310B, 1.5px 0px 0 #A7310B, -1.5px 0px 0 #A7310B, 0px -1.5px 0 #A7310B;
+        1.5px -1.5px 0 #A7310B, -1.5px -1.5px 0 #A7310B, 0px 1.5px 0 #A7310B, 1.5px 0px 0 #A7310B, -1.5px 0px 0 #A7310B, 0px -1.5px 0 #A7310B;
       }
 
       .panel-skills {
@@ -535,6 +534,7 @@
         height: 100%;
         object-fit: cover;
         border-radius: 28px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       }
 
       .video-wrapper.side img {
