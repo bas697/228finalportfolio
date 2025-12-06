@@ -345,7 +345,6 @@
         max-height: 550px;
         width: auto;
         display: block;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       }
 
       .caption-box {
@@ -418,7 +417,6 @@
         border-radius: 4px;
         object-position: top;
         margin-top: -1px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       }
 
       .webapp-caption {
@@ -488,7 +486,6 @@
         object-fit: cover;
         object-position: top;
         margin-top: -11px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       }
 
 
@@ -535,7 +532,6 @@
         height: 100%;
         object-fit: cover;
         border-radius: 28px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
       }
 
       .video-wrapper.side img {
@@ -940,39 +936,46 @@
               </div>
             </div>
 
-            <form class="contact-form" action="mailto:basteven@uwaterloo.ca" method="post" enctype="text/plain">
+                   <form class="contact-form" 
+              action="https://formsubmit.co/basteven@uwaterloo.ca" 
+              method="POST">
 
-              <div class="form-row">
-                <div class="input-wrapper">
-                  <label for="firstName">First Name</label>
-                  <input type="text" id="firstName" name="firstName" required>
-                </div>
+          <input type="hidden" name="_subject" value="New Contact Form Submission">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
 
-                <div class="input-wrapper">
-                  <label for="lastName">Last Name</label>
-                  <input type="text" id="lastName" name="lastName" required>
-                </div>
-              </div>
+          <div class="form-row">
+            <div class="input-wrapper">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
 
-              <div class="input-wrapper">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-              </div>
+            <div class="input-wrapper">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
 
-              <div class="input-wrapper">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required>
-              </div>
+          <div class="input-wrapper">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
 
-              <div class="input-wrapper">
-                <label for="message">Message (optional)</label>
-                <textarea id="message" name="message" rows="5"></textarea>
-              </div>
+          <div class="input-wrapper">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
 
-              <button type="submit" class="contact-btn">
-                <span>SEND MESSAGE</span>
-              </button>
-            </form>
+          <div class="input-wrapper">
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="contact-btn">
+            <span>SEND MESSAGE</span>
+          </button>
+        </form>
+
           </div>
         </div>
         <div class="contact-divider"></div>
@@ -992,7 +995,7 @@
 
           <div class="quick-link right">
             <img src="bookicon.svg" alt="Resume Icon" class="quick-icon">
-            <a href="resume.pdf" target="_blank">Look At My Resume</a>
+            <a href="Resume - Brendan Stevens Feb 2 2025 (Updated).pdf" target="_blank">Look At My Resume</a>
             <span class="arrow">→</span>
           </div>
         </section>
