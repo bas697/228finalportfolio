@@ -1,71 +1,163 @@
-
 <!DOCTYPE html>
 <html lang="en-CA">
-<head>
-  <meta charset="UTF-8">
-  <title>Video 3 - SACRIFICE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-  <style>
-    
-    body {
-      margin: 0;
-      font-family: 'Anton SC', sans-serif;
-      text-align: center;
-      height: 1300px;
-      padding-top: 40px;
-      background-color: #111;
-      color: #FDFFD9;
-    }
-    
-    h1 {
-      margin-top: 50px;
-      font-size: 64px;
-      text-shadow: 2px 2px 0 #A9320F;
-    }
-    
-    .video-wrapper {
-      width: 100%;
-      margin-left: 310px;
-      max-width: 900px;
-      aspect-ratio: 16 / 9;
-    }
-    
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      border-radius: 6px;
-    }
-    
-    a {
-      display: inline-block;
-      margin-top: 40px;
-      text-decoration: none;
-      color: #FFBB00;
-      font-size: 28px;
-      text-shadow: 1px 1px 0 #A9320F;
-    }
-    
-    a:hover {
-      opacity: 0.8;
-    }
-    
-  </style>
-</head>
-<body>
-   <h1>SACRIFICE</h1>
-    <div class="video-wrapper">
-        <iframe 
-            src="https://www.youtube.com/embed/TL0IP9N_yfc"
-            title="AOT Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-    </div>
-  <div class="video-container">
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <title>Video 3 - SACRIFICE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Anton SC', sans-serif;
+        text-align: center;
+        height: 1300px;
+        padding-top: 40px;
+        background-color: white;
+        color: #FDFFD9;
+      }
 
-  <a href="index.html">Back to Portfolio</a>
-</body>
+      .frame {
+        width: 1440px;
+        max-width: 100%;
+        margin: 0 auto;
+        background: white;
+        box-sizing: border-box;
+        padding: 5px 0px;
+      }
+
+      .panel-background {
+        width: 1416px;
+        height: 1220px;
+        padding: 5px 0px;
+        margin-left: 42px;
+        margin-top: -32px;
+        background-image: url('videodescription.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      .container {
+        max-width: 1200px;
+        max-height: 100%;
+        margin: 0 auto;
+        padding: 40px 20px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .navbar {
+        width: 1331px;
+        height: 76px;
+        background: rgba(184, 55, 15, 0.95);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid black;
+        padding: 0 40px;
+        position: fixed;
+        top: 0.9%;
+        left: 2.85%;
+        z-index: 10;
+      }
+
+      .nav-left .nav-name {
+        font-family: "Anton SC", sans-serif;
+        font-size: 26px;
+        text-shadow: 1px 1px 0 #A7300C, -1px 1px 0 #A7300C,
+        1px -1px 0 #A7300C, -1px -1px 0 #A7300C;
+        color: #FDFFD9;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+
+      .video-wrapper {
+        width: 100%;
+        margin-left: 37px;
+        max-width: 900px;
+        aspect-ratio: 16 / 9;
+        margin-top: 90px;
+      }
+
+      h1 {
+        margin-top: 5px;
+        font-size: 86px;
+        margin-right: 815px;
+        text-shadow: 2.5px 2.5px 0 #A7300C, -2.5px 2.5px 0 #A7300C,
+        2.5px -2.5px 0 #A7300C, -2.5px -2.5px 0 #A7300C;
+        font-family: 'Anton SC', sans-serif;
+      }
+
+      iframe {
+        width: 125%;
+        height: 637px;
+        border: none;
+        border-radius: 6px;
+      }
+
+      .divider {
+        width: 1140px;
+        height: 4px;
+        background-color: #EE4410;
+        margin: -50px auto 0;
+        border-radius: 6px;
+        border: 3px solid black;
+      }
+
+      .media-info {
+        margin-top: 25px;
+        color: #FDFFD9;
+        font-family: "Fredoka One", sans-serif;
+        font-size: 26px;
+        text-align: left;
+        margin-left: 30px;
+        line-height: 2;
+        text-shadow: 1.6px 1.6px 0 #A7300C, -1.6px 1.6px 0 #A7300C,
+        1.6px -1.6px 0 #A7300C, -1.6px -1.6px 0 #A7300C;
+      }
+
+      .media-info .label {
+        margin-top: 10px;
+        line-height: 1.2;
+      }
+
+      .media-info .item {
+        font-size: 35px;
+        font-family: "Comic Neue", sans-serif;
+        color: #FDFFD9;
+        font-weight: 700;
+        margin: -35px 0 10px;
+        text-shadow: 1.7px 1.7px 0 #A7300C, -1.7px 1.7px 0 #A7300C,
+          1.7px -1.7px 0 #A7300C, -1.7px -1.7px 0 #A7300C;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="nav-name">BRENDAN STEVENS</a>
+      </div>
+    </div>
+    <div class="panel-background">
+      <div class="container">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/TL0IP9N_yfc" title="AOT Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+        <h1>SACRIFICE</h1>
+        <div class="divider"></div>
+
+        <div class="media-info">
+          <p class="label">MEDIA USED:</p>
+          <p class="item">Attack On Titan All Seasons</p>
+          <p class="label">MUSIC USED:</p>
+          <p class="item">Die Young (Slowed)</p>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
 </html>
